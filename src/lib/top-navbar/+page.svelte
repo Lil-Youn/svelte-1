@@ -5,7 +5,7 @@
     Title,
     AutoAdjust,
   } from "@smui/top-app-bar";
-  import IconButton from "@smui/icon-button";
+  import Button from "@smui/button/src/Button.svelte";
 
   let topAppBar: TopAppBar;
 </script>
@@ -15,18 +15,22 @@
   <TopAppBar bind:this={topAppBar} variant="fixed">
     <Row>
       <Section>
-        <IconButton class="material-icons">menu</IconButton>
-        <Title>Fixed</Title>
+        <Button class="material-icons">menu</Button>
+        <Title>My App</Title>
       </Section>
       <Section align="end" toolbar>
-        <IconButton class="material-icons" aria-label="Download"
-          >file_download</IconButton
+        <Button class="material-icons" aria-label="Download" href="/"
+          >Home</Button
         >
-        <IconButton class="material-icons" aria-label="Print this page"
-          >print</IconButton
+        <Button
+          class="material-icons"
+          aria-label="Print this page"
+          href="/site1">Site 1</Button
         >
-        <IconButton class="material-icons" aria-label="Bookmark this page"
-          >bookmark</IconButton
+        <Button
+          class="material-icons"
+          aria-label="Bookmark this page"
+          href="/site2">Site 2</Button
         >
       </Section>
     </Row>
