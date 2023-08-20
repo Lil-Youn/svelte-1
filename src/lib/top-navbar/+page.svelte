@@ -5,7 +5,11 @@
     Title,
     AutoAdjust,
   } from "@smui/top-app-bar";
-  import Button from "@smui/button/src/Button.svelte";
+  import Menu from "@smui/menu";
+  import List, { Item, Separator, Text } from "@smui/list";
+  import Button, { Label } from "@smui/button";
+
+  let menu: Menu;
 
   let topAppBar: TopAppBar;
 </script>
@@ -15,7 +19,29 @@
   <TopAppBar bind:this={topAppBar} variant="fixed">
     <Row>
       <Section>
-        <Button class="material-icons">menu</Button>
+        <div style="min-width: 100px;">
+          <Button on:click={() => menu.setOpen(true)}>
+            <Label>Menu</Label>
+          </Button>
+          <Menu bind:this={menu}>
+            <List>
+              <Item>
+                <Text>Cut</Text>
+              </Item>
+              <Item>
+                <Text>Copy</Text>
+              </Item>
+              <Item>
+                <Text>Paste</Text>
+              </Item>
+              <Separator />
+              <Item>
+                <Text>Delete</Text>
+              </Item>
+            </List>
+          </Menu>
+        </div>
+
         <Title>My App</Title>
       </Section>
       <Section align="end" toolbar>
