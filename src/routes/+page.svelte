@@ -1,11 +1,8 @@
 <script>
-  import TopNavbar from "$lib/top-navbar/+page.svelte";
   let src = "/src/assets/whale.png";
   let name = "Simon";
 </script>
 
-<link rel="stylesheet" href="node_modules/svelte-material-ui/bare.css" />
-<TopNavbar />
 <div class="welcome-box">
   <h1>Hi {name}! Welcome to my first Svelte App</h1>
 </div>
