@@ -1,11 +1,13 @@
-<div class="w-1/2 flex justify-center mb-5">
+<div
+  class="w-1/2 flex justify-center mb-5 border-b border-t border-l border-r border-gray-800 rounded-b rounded-t"
+>
   <div
     class="h-48 lg:h-auto lg:w-48 flex-none bg-contain rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
     style="background-image: url('/src/assets/whale.png')"
     title="whale"
   />
   <div
-    class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+    class="  bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
   >
     <div class="mb-8">
       <div class="text-gray-900 font-bold text-xl mb-2">
