@@ -29,8 +29,14 @@
   });
 </script>
 
+<header>
+  <div class="flex justify-center mt-10 mb-20">
+    <div class="shadow-md rounded-md w-1/2">
+      <p class="font-mono text-lg text-gray-800 text-center">Site 1</p>
+    </div>
+  </div>
+</header>
 <main>
-  <h1>Site 1 - Page</h1>
   {#each posts as post (post.id)}
     <li>
       <h2>{post.title}</h2>
