@@ -1,77 +1,45 @@
-<script lang="ts">
-  import TopAppBar, {
-    Row,
-    Section,
-    Title,
-    AutoAdjust,
-  } from "@smui/top-app-bar";
-  import Menu from "@smui/menu";
-  import List, { Item, Separator, Text } from "@smui/list";
-  import Button, { Label } from "@smui/button";
-
-  let menu: Menu;
-
-  let topAppBar: TopAppBar;
+<script>
+  import { BottomNav, BottomNavItem, Tooltip } from "flowbite-svelte";
+  import { Icon } from "flowbite-svelte-icons";
 </script>
 
-<link rel="stylesheet" href="node_modules/svelte-material-ui/bare.css" />
-<div class="top-app-bar-container">
-  <TopAppBar bind:this={topAppBar} variant="fixed">
-    <Row>
-      <Section>
-        <div style="min-width: 100px;">
-          <Button on:click={() => menu.setOpen(true)}>
-            <Label>Menu</Label>
-          </Button>
-          <Menu bind:this={menu}>
-            <List>
-              <Item>
-                <Text>Cut</Text>
-              </Item>
-              <Item>
-                <Text>Copy</Text>
-              </Item>
-              <Item>
-                <Text>Paste</Text>
-              </Item>
-              <Separator />
-              <Item>
-                <Text>Delete</Text>
-              </Item>
-            </List>
-          </Menu>
-        </div>
-
-        <Title>My App</Title>
-      </Section>
-      <Section align="end" toolbar>
-        <Button class="material-icons" aria-label="Download" href="/"
-          >Home</Button
-        >
-        <Button
-          class="material-icons"
-          aria-label="Print this page"
-          href="/site1">Site 1</Button
-        >
-        <Button
-          class="material-icons"
-          aria-label="Bookmark this page"
-          href="/site2">Site 2</Button
-        >
-      </Section>
-    </Row>
-  </TopAppBar>
-</div>
-<AutoAdjust {topAppBar} />
-
-<style>
-  /* Hide everything above this component. */
-  :global(#smui-app),
-  :global(body),
-  :global(html) {
-    display: block !important;
-    height: auto !important;
-    width: auto !important;
-    position: static !important;
-  }
-</style>
+<BottomNav position="absolute" navType="application" classInner="grid-cols-5">
+  <BottomNavItem href="/" btnName="Home" appBtnPosition="left">
+    <Icon
+      name="home-solid"
+      class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500"
+    />
+    <Tooltip arrow={false}>Home</Tooltip>
+  </BottomNavItem>
+  <BottomNavItem href="/site1" btnName="Wallet" appBtnPosition="middle">
+    <Icon
+      name="wallet-solid"
+      class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500"
+    />
+    <Tooltip arrow={false}>Site 1</Tooltip>
+  </BottomNavItem>
+  <div class="flex items-center justify-center">
+    <BottomNavItem
+      btnName="Create new item"
+      appBtnPosition="middle"
+      btnClass="inline-flex items-center justify-center w-10 h-10 font-medium bg-primary-600 rounded-full hover:bg-primary-700 group focus:ring-4 focus:ring-primary-300 focus:outline-none dark:focus:ring-primary-800"
+    >
+      <Icon name="plus-solid" class="text-white" />
+      <Tooltip arrow={false}>Create new item</Tooltip>
+    </BottomNavItem>
+  </div>
+  <BottomNavItem href="/site2" btnName="Settings" appBtnPosition="middle">
+    <Icon
+      name="adjustments-vertical-outline"
+      class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500"
+    />
+    <Tooltip arrow={false}>Site 2</Tooltip>
+  </BottomNavItem>
+  <BottomNavItem btnName="Profile" appBtnPosition="right">
+    <Icon
+      name="user-circle-solid"
+      class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500"
+    />
+    <Tooltip arrow={false}>Profile</Tooltip>
+  </BottomNavItem>
+</BottomNav>

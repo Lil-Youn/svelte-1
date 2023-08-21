@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let src = "/src/assets/whale.png";
   let name = "Simon";
 </script>
