@@ -1,31 +1,20 @@
 <script lang="ts">
+  import Card from "$lib/card/card.svelte";
+
   let src = "/src/assets/whale.png";
-  let name = "Simon";
+  let name = "ChefDev";
 </script>
 
-<div class="welcome-box">
-  <h1>Hi {name}! Welcome to my first Svelte App</h1>
+<div class="flex justify-center mt-10 mb-20">
+  <div class="shadow-md rounded-md w-1/2">
+    <p class="font-mono text-lg text-gray-800 text-center">
+      Hi {name}! Welcome to my first Svelte App
+    </p>
+  </div>
 </div>
-<img {src} alt="whale" />
+<div class="flex justify-center mb-5">
+  <Card />
+</div>
 
 <style>
-  h1 {
-    color: darkgrey;
-    text-align: center;
-    text-decoration: underline;
-  }
-  .welcome-box {
-    margin: 5px auto;
-    width: 50%;
-    border: 1px solid black;
-    border-radius: 25px;
-    margin-bottom: 5%;
-  }
-  img {
-    display: block;
-    margin: 0 auto;
-    width: 25%;
-    height: 25%;
-    margin-bottom: 5px;
-  }
 </style>
