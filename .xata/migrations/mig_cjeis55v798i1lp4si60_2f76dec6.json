@@ -1,0 +1,16 @@
+{
+  "id": "mig_cjeis55v798i1lp4si60",
+  "parentID": "mig_cjeirvtv798i1lp4si50",
+  "checksum": "1:2f76dec6e98cfe67106025267ad85d4388f66085de4deecd47eb9a48a83a4cc8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "nickname",
+          "type": "string"
+        },
+        "table": "site-2"
+      }
+    }
+  ]
+}

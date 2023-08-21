@@ -1,0 +1,13 @@
+{
+  "id": "mig_cjeisddv798i1lp4si70",
+  "parentID": "mig_cjeis6oqlb7oivgtvieg",
+  "checksum": "1:da7882614d50157bd1676d30b231ec68acd6d5825503eba44d0501803160a4b9",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "age",
+        "table": "site-2"
+      }
+    }
+  ]
+}

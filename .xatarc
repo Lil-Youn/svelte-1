@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Simon-s-workspace-qf11og.eu-central-1.xata.sh/db/xata-learning",
+  "codegen": {
+    "output": "src/routes/xata.ts"
+  }
+}
