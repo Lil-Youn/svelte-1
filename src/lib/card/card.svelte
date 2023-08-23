@@ -2,10 +2,11 @@
   import { Card, Button, Toggle } from "flowbite-svelte";
   import { Icon } from "flowbite-svelte-icons";
   let vCard = false;
+  import Whale from "/src/assets/whale.png";
 </script>
 
 <div style="width: 300px; height: 300px; margin-bottom: 10vh;">
-  <Card img="/src/assets/whale.png" reverse={vCard} class="mb-2">
+  <Card img={Whale} reverse={vCard} class="mb-2">
     <h5
       class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
     >
