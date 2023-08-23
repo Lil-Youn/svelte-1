@@ -1,6 +1,5 @@
 <script>
   import { Card, Button, Toggle } from "flowbite-svelte";
-  import { Icon } from "flowbite-svelte-icons";
   let vCard = false;
   import Whale from "/src/assets/whale.png";
 </script>
