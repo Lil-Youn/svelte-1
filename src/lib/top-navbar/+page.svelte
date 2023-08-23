@@ -1,4 +1,5 @@
 <script>
+  import Darkmode from "$lib/darkmode/darkmode.svelte";
   import { BottomNav, BottomNavItem, Tooltip } from "flowbite-svelte";
   import { Icon } from "flowbite-svelte-icons";
 </script>
@@ -25,8 +26,8 @@
         appBtnPosition="middle"
         btnClass="inline-flex items-center justify-center w-10 h-10 font-medium bg-primary-600 rounded-full hover:bg-primary-700 group focus:ring-4 focus:ring-primary-300 focus:outline-none dark:focus:ring-primary-800"
       >
-        <Icon name="plus-solid" class="text-white" />
-        <Tooltip arrow={false}>Create new item</Tooltip>
+        <Darkmode />
+        <Tooltip arrow={false}>Light/Darkmode</Tooltip>
       </BottomNavItem>
     </div>
     <BottomNavItem href="/site2" btnName="Settings" appBtnPosition="middle">
