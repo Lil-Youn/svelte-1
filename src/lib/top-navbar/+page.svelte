@@ -37,12 +37,12 @@
       />
       <Tooltip arrow={false}>Site 2</Tooltip>
     </BottomNavItem>
-    <BottomNavItem btnName="Profile" appBtnPosition="right">
+    <BottomNavItem href="/site3" btnName="Profile" appBtnPosition="right">
       <Icon
         name="user-circle-solid"
         class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-primary-600 dark:group-hover:text-primary-500"
       />
-      <Tooltip arrow={false}>Profile</Tooltip>
+      <Tooltip arrow={false}>Site 3</Tooltip>
     </BottomNavItem>
   </BottomNav>
 </div>
@@ -51,6 +51,7 @@
   .bottom-nav-container {
     position: fixed;
     bottom: 0;
+
     width: 100%;
   }
 </style>
