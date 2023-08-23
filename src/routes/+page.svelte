@@ -5,7 +5,7 @@
   let name = "ChefDev";
 </script>
 
-<div class="flex justify-center mt-10 mb-20">
+<div class="flex justify-center mt-10 mb-10">
   <div class="shadow-md rounded-md w-1/2">
     <p class="font-mono text-lg text-gray-800 text-center">
       Hi {name}! Welcome to my first Svelte App
