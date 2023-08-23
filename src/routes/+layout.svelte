@@ -4,6 +4,6 @@
 </script>
 
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-<TopNavbar />
 
 <slot />
+<TopNavbar />
