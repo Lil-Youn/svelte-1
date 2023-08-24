@@ -1,7 +1,11 @@
 <script>
-  import { Button, Modal } from "flowbite-svelte";
+  import { Button, Modal, Popover } from "flowbite-svelte";
   import { Icon } from "flowbite-svelte-icons";
+  import { slide } from "svelte/transition";
+  import { Toast } from "flowbite-svelte";
+
   let popupModal = false;
+  let popupToast = false;
 </script>
 
 <header>
@@ -29,6 +33,32 @@
       <Button color="alternative">Dafuq</Button>
     </div>
   </Modal>
+  <div class="popover-button">
+    <Button>Slide popover</Button>
+    <Popover
+      class="w-64 text-sm font-light"
+      title="Popover title"
+      transition={slide}
+      >And here's some amazing content. It's very engaging. Right?</Popover
+    >
+  </div>
+  <div class="toast-button">
+    <Button on:click={() => (popupToast = true)}>Toast?</Button>
+  </div>
+  <Toast
+    bind:open={popupToast}
+    autoclose
+    transition={slide}
+    position="bottom-right"
+    dismissable={false}
+  >
+    <Icon
+      name="fire-outline"
+      slot="icon"
+      class="w-5 h-5 text-primary-500 bg-primary-100 dark:bg-primary-800 dark:text-primary-200"
+    />
+    Set yourself free.
+  </Toast>
 </main>
 
 <style>
@@ -37,6 +67,22 @@
     margin-bottom: 15rem;
   }
   .modal-button {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .popover-button {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .toast-button {
     margin: 0 auto;
     display: flex;
     position: relative;
