@@ -1,15 +1,15 @@
 <script>
   import { Gallery } from "flowbite-svelte";
-  import Whale from "/src/assets/whale.png";
+  import Whale from "/src/assets/whale.jpeg";
   import whale1 from "/src/assets/whale1.jpeg";
-  import whale2 from "/src/assets/whale2.png";
-  import whale3 from "/src/assets/whale3.png";
-  import whale4 from "/src/assets/whale4.png";
-  import whale5 from "/src/assets/whale5.png";
-  import whale6 from "/src/assets/whale6.png";
-  import whale7 from "/src/assets/whale7.png";
-  import whale9 from "/src/assets/whale9.png";
-  import whale10 from "/src/assets/whale10.png";
+  import whale2 from "/src/assets/whale2.jpeg";
+  import whale3 from "/src/assets/whale3.jpeg";
+  import whale4 from "/src/assets/whale4.jpeg";
+  import whale5 from "/src/assets/whale5.jpeg";
+  import whale6 from "/src/assets/whale6.jpeg";
+  import whale7 from "/src/assets/whale7.jpeg";
+  import whale9 from "/src/assets/whale9.jpeg";
+  import whale10 from "/src/assets/whale10.jpeg";
   import whale11 from "/src/assets/whale11.jpeg";
   import whale12 from "/src/assets/whale12.jpeg";
   const images = [
