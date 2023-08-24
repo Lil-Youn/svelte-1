@@ -6,6 +6,23 @@
 
   let popupModal = false;
   let popupToast = false;
+
+  function showPopupToast() {
+    popupToast = true;
+
+    setTimeout(() => {
+      popupToast = false;
+    }, 2000);
+  }
+
+  let toastOpen = false;
+  function showToast() {
+    toastOpen = true;
+
+    setTimeout(() => {
+      toastOpen = false;
+    }, 2000);
+  }
 </script>
 
 <header>
@@ -43,11 +60,12 @@
     >
   </div>
   <div class="toast-button">
-    <Button on:click={() => (popupToast = true)}>Toast?</Button>
+    <Button on:click={showToast}>Toast?</Button>
   </div>
+
   <Toast
-    bind:open={popupToast}
-    autoclose
+    class="mb-12"
+    open={toastOpen}
     transition={slide}
     position="bottom-right"
     dismissable={false}
@@ -64,8 +82,9 @@
 <style>
   main {
     padding: 1rem;
-    margin-bottom: 15rem;
+    margin-bottom: 20rem;
   }
+
   .modal-button {
     margin: 0 auto;
     display: flex;
