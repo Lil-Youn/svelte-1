@@ -13,3 +13,10 @@
   <h5>Site 3</h5>
   <h6>Site 3</h6>
 </main>
+
+<style>
+  main {
+    padding: 1rem;
+    margin-bottom: 15rem;
+  }
+</style>

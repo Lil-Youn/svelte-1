@@ -51,5 +51,6 @@
 <style>
   main {
     padding: 1rem;
+    margin-bottom: 10rem;
   }
 </style>
