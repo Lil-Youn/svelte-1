@@ -1,21 +1,21 @@
 <script>
   import { Gallery } from "flowbite-svelte";
-  let whale = "/src/assets/whale.png";
-  let whale1 = "/src/assets/whale1.jpeg";
-  let whale2 = "/src/assets/whale2.PNG";
-  let whale3 = "/src/assets/whale3.PNG";
-  let whale4 = "/src/assets/whale4.PNG";
-  let whale5 = "/src/assets/whale5.PNG";
-  let whale6 = "/src/assets/whale6.PNG";
-  let whale7 = "/src/assets/whale7.PNG";
-  let whale9 = "/src/assets/whale9.png";
-  let whale10 = "/src/assets/whale10.png";
-  let whale11 = "/src/assets/whale11.jpeg";
-  let whale12 = "/src/assets/whale12.jpeg";
+  import Whale from "/src/assets/whale.png";
+  import whale1 from "/src/assets/whale1.jpeg";
+  import whale2 from "/src/assets/whale2.png";
+  import whale3 from "/src/assets/whale3.png";
+  import whale4 from "/src/assets/whale4.png";
+  import whale5 from "/src/assets/whale5.png";
+  import whale6 from "/src/assets/whale6.png";
+  import whale7 from "/src/assets/whale7.png";
+  import whale9 from "/src/assets/whale9.png";
+  import whale10 from "/src/assets/whale10.png";
+  import whale11 from "/src/assets/whale11.jpeg";
+  import whale12 from "/src/assets/whale12.jpeg";
   const images = [
     {
       alt: "erbology",
-      src: whale,
+      src: Whale,
     },
     {
       alt: "shoes",
@@ -50,7 +50,7 @@
       src: whale9,
     },
     {
-      alt: "toiletbag",
+      alt: "toiimportbag",
       src: whale10,
     },
     {
