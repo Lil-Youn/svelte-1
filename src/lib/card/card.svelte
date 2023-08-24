@@ -2,9 +2,13 @@
   import { Card, Button, Toggle } from "flowbite-svelte";
   let vCard = false;
   import Whale from "/src/assets/whale.png";
+  let isMobile = false;
 </script>
 
-<div style="width: 300px; height: 300px; margin-bottom: 10vh;">
+<div
+  class="responsive-container"
+  style={isMobile ? "margin-bottom: 10vh;" : "margin-bottom: 25vh;"}
+>
   <Card img={Whale} reverse={vCard} class="mb-2">
     <h5
       class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -18,3 +22,18 @@
     </p>
   </Card>
 </div>
+
+<style>
+  .responsive-container {
+    width: 25vw;
+    height: 20vh;
+    position: relative;
+  }
+
+  @media (max-width: 600px) {
+    .responsive-container {
+      width: 50vw;
+      height: 30vh;
+    }
+  }
+</style>
