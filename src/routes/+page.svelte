@@ -23,6 +23,6 @@
 <style>
   main {
     padding: 1rem;
-    margin-bottom: 25rem;
+    margin-bottom: 15rem;
   }
 </style>
