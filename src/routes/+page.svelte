@@ -12,7 +12,7 @@
     </p>
   </div>
 </div>
-<div class="flex justify-center mb-5">
+<div class="flex justify-center mb-5 relative">
   <Card />
 </div>
 
