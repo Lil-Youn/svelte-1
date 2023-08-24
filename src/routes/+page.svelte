@@ -12,9 +12,11 @@
     </p>
   </div>
 </div>
-<div class="flex justify-center mb-5 relative">
-  <Card />
-</div>
+<main>
+  <div class="flex justify-center mb-10 relative">
+    <Card />
+  </div>
+</main>
 
 <style>
 </style>
